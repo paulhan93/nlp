@@ -14,7 +14,7 @@ cd MidiBERT/CP
 * Download the pre-trained model checkpoint from the MidiBERT-Piano repo
 * Now you can fine-tune MidiBERT-Piano on GLUE tasks:
 ```python
-python3 midi_glue.py --task=‘mrpc’ --epochs=3 --ckpt='pretrain_model.ckpt' --lr=2e-5
+python3 midi_glue.py --task='mrpc' --epochs=3 --ckpt='pretrain_model.ckpt' --lr=2e-5
 ```
 * The fine-tuning runs for our experiments are in ```run_finetune_on_midi.sh```
 
