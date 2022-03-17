@@ -19,3 +19,6 @@ python3 midi_glue.py --task='mrpc' --epochs=3 --ckpt='pretrain_model.ckpt' --lr=
 * The fine-tuning runs for our experiments are in ```run_finetune_on_midi.sh```
 
 ## To fine-tune the Dutch model on GLUE tasks
+* We used the run_glue.py script provided by Hugging Face to fine-tune GroNLP/bert-base-dutch-cased on the GLUE tasks.
+* The Wordpiece tokenizer that we used for the English vocabulary is saved as a serialized JSON file on our repository as ```tokenizer.json``` and the vocabulary file is ```vocab.txt```
+* The fine-tuning runs for our experiments are in ```run_finetune_on_bert-base-cased.sh```, ```run_finetune_on_bert-base-cased_random_weights.sh```, and ```run_finetune_on_bert-base-dutch-cased.sh```
